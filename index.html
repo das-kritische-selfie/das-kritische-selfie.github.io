@@ -5,16 +5,83 @@
         <meta charset="utf-8">
 
         <style>
+            * {
+                box-sizing: border-box;
+            }
+
             body{
                 background-color: black;
-                color: cornflowerblue
-
+                color: cornflowerblue;
+                font-family: Arial;
+                padding: 20px;
+            }
+            .header {
+                padding: 30px;
+                font-size: 40px;
+                text-align: center;
+                background: white;
+            }
+            .leftcolumn {
+                float: left;
+                width: 75%;
+            }
+            .rightcolumn {
+                float: left;
+                width: 25%;
+                padding-left: 20px;
+            }
+            .card {
+                background-color: white;
+                padding: 20px;
+                margin-top: 20px;
+            }
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .footer {
+                padding: 20px;
+                text-align: center;
+                background: #ddd;
+                margin-top: 20px;
             }
         </style>
     </head>
     
     <body>
-        <h1>Hello World!</h1>
-        <h2>This is my first website published by Github.</h2>
+        <!-- Header -->
+        <div class="header">
+            <h2>Das kritische Selfie</h2>
+        </div>
+        <!--  -->
+        <div class="row">
+            <!-- Left column -->
+            <div class="leftcolumn">
+                <!-- First Blogpost. -->
+                <div class="card">
+                    <h2>My first Blogpost.</h2>
+                    <h5>Lorem ipsum.</h5>
+                    <div></div> <!--Picture-->
+                    <p>A little bit here.</p>
+                    <p>A little bit there.</p>
+                </div>
+            </div>
+            <!-- Right column -->
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>Über mich:</h2>
+                    <h5>Mein Name</h5>
+                    <div></div> <!--Picture-->
+                    <p>Ambitionen....</p>
+                    <p>A little bit there.</p>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div class="footer">
+                <h2>Footer</h2>
+            </div>
+        </div>
+
     </body>
 </html>
